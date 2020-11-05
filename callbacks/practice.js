@@ -125,13 +125,16 @@ contains(names, 'Colt', function(result){
 */
 
 //Code Here
-function uniq(arr,callback) {
-  for(i=0 i; i<arr.length; i++) {
-    for(let j = i++; j < arr.length; j++) {
-      if (arr[i] === arr[j])
+function uniq(arr, callback) {
+  for(i=0; i<arr.length; i++) {
+    for(let j = i + 1; j < arr.length; j++) {
+      if (arr[i] === arr[j]) {
+        arr.splice(j, 1);
+      }
     }
   }
-
+  console.log (arr);
+  callback(arr);
 }
 
 // Do not edit the code below.
