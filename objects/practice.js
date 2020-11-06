@@ -15,6 +15,11 @@
 */
 
 //Code here
+let me = {
+  name: 'Mars',
+  age: 27 
+}
+// alert(me.name)
 
 ////////// PROBLEM 2 //////////
 
@@ -24,6 +29,14 @@
 */
 
 //Code here
+let favoriteThings = {
+  band: 'The Seattle Garages',
+  food: 'Pizza',
+  person: 'EJ',
+  book: 'BDSM 101',
+  movie: 'Infinity War',
+  holiday: 'Halloween'
+}
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
@@ -31,13 +44,16 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Mustang'
+favoriteThings.brand = 'brand??'
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
 //Code here
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
 
 ////////// PROBLEM 3 //////////
 
@@ -50,12 +66,20 @@
 */
 
 //Code here
+let backPack = {}
+
+let item = 'firstPocket'
+
+backPack[item] = 'chapstick'
+
+backPack.color = 'black'
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
+alert(backPack)
 
 /*
 You probably noticed that it just alerted [object Object].
